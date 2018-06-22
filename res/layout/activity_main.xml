@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userinfo"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/name_tt"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_person_blue_500_36dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Name" />
+
+        <!--<com.ebanx.swipebtn.SwipeButton
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:inner_text="Swipe to call"
+            android:layout_centerInParent="true"/>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>
