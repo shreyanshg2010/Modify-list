@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/contact"
+        android:layout_width="373dp"
+        android:layout_height="161dp"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/ic_account_box_grey_500_36dp"
+        android:text="Name:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_below="@+id/userinfo"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="45dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ic_account_circle_grey_500_24dp"
+            android:text="Name:" />
+
+        <TextView
+            android:id="@+id/firebase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="Saving to Cloud"
+            android:textSize="20sp"
+            android:layout_weight="35.67" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userinfo"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/name_iv"
+            android:layout_width="48dp"
+            android:layout_height="59dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ic_account_box_grey_500_36dp"
+            android:text="Name:" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/phone_iv"
+            android:layout_width="48dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/name_iv"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ic_call_grey_500_36dp"
+            android:text="Contact:" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/name"
+            android:hint="Phone"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.58"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/email_iv"
+            android:layout_width="52dp"
+            android:layout_height="51dp"
+            android:layout_below="@+id/phone_iv"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ic_email_grey_500_36dp"
+            android:text="Email:" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/phone"
+            android:layout_weight="4219.49"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+
+
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:onClick="button"-->
+        <!--android:text="submit" />-->
+
+</LinearLayout>
