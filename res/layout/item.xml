@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/contact"
+        android:layout_width="373dp"
+        android:layout_height="161dp"
+        android:layout_marginRight="50dp"
+        android:background="#87ceeb"
+        android:text="Name:" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#87ceeb"
+            android:text="Name"
+            android:textSize="40sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/phone_iv"
+            android:layout_width="47dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/name_iv"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ic_call_blue_500_36dp"
+            android:text="Contact:" />
+        <TextView
+            android:text="Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:layout_below="@+id/Name"
+             android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.58"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/email_iv"
+            android:layout_width="47dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/phone_iv"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ic_email_blue_500_36dp"
+            android:text="Email:" />
+
+        <TextView
+            android:text="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:layout_below="@+id/Name"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
